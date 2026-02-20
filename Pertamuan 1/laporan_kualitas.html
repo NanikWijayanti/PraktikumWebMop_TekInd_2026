@@ -1,28 +1,56 @@
-<h2>Laporan Inspeksi Kualitas</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<form>
-    <!-- ID Produk -->
-    <label for="idProduk">ID Produk:</label><br>
-    <input type="text" id="idProduk" name="idProduk"><br><br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Inspeksi Kualitas_Nanik Wijayanti_23051430006</title>
+</head>
 
-    <!-- Nama Inspektur -->
-    <label for="namaInspektur">Nama Inspektur:</label><br>
-    <input type="text" id="namaInspektur" name="namaInspektur"><br><br>
+<body>
+    <div class="container">
+        <header>
+            <h1>Laporan Inspeksi Kualitas</h1>
+            <h3>Dibuat oleh : Nanik Wijayanti (23051430006)</h3>
+        </header>
+        <section>
+            <form action="">
+                <!-- field id produk -->
+                <label for="id_produk">Id Produk :</label><br>
+                <input type="text" id="id_produk" name="Id Produk" placeholder="Masukkan id produk" required><br><br>
 
-    <!-- Jenis Cacat -->
-    <label>Jenis Cacat:</label><br>
-    <input type="radio" name="jenisCacat" value="Geometri"> Geometri<br>
-    <input type="radio" name="jenisCacat" value="Permukaan"> Permukaan<br>
-    <input type="radio" name="jenisCacat" value="Fungsional"> Fungsional<br><br>
+                <!-- field nama inspektur  -->
+                <label for="nama_inspektur">Nama Inspektur :</label><br>
+                <input type="text" id="nama_inspektur" name="nama_inspektur" placeholder="Masukkan nama inspektur"
+                    required><br><br>
 
-    <!-- Jumlah Cacat -->
-    <label for="jumlahCacat">Jumlah Cacat:</label><br>
-    <input type="number" id="jumlahCacat" name="jumlahCacat"><br><br>
+                <!-- field jenis cacat -->
+                <label>Jenis Cacat :</label>
+                <!-- Radio opsi geometri -->
+                <input type="radio" id="geometri" name="status" value="geometri">
+                <label class="label-radio" for="geometri">Geometri</label><br>
+                <!-- Radio opsi permukaan -->
+                <input type="radio" id="permukaan" name="status" value="permukaan">
+                <label class="label-radio" for="permukaan">Permukaan</label><br>
+                <!-- Radio opsi fungsional -->
+                <input type="radio" id="fungsional" name="status" value="fungsional">
+                <label class="label-radio" for="fungsional">Fungsional</label><br><br>
 
-    <!-- Foto Produk -->
-    <label for="fotoProduk">Foto Produk:</label><br>
-    <input type="file" id="fotoProduk" name="fotoProduk"><br><br>
+                <!-- field jumlah cacat -->
+                <label for="jumlah_cacat">Jumlah Produk Cacat(Unit) :</label><br>
+                <input type="number" id="jumlah_cacat" name="jumlah_cacat" min="0"
+                    placeholder="Masukkan jumlah produk cacat"><br><br>
 
-    <!-- Tombol Submit -->
-    <button type="submit">Submit</button>
-</form>
+                <!-- field foto produk -->
+                <label for="foto_produk">Upload Foto Produk :</label><br>
+                <input type="file" id="foto_produk" name="foto_produk"
+                    placeholder="Upload foto produk dari perangkat Anda">
+                <br><br>
+                <button type="submit">Simpan Data</button><br><br>
+                <button type="reset">Reset data</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
