@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard_inventory.css">
+    <title>Gudang Bahan Baku</title>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Sparepart Inventory</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stok Masuk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stok Keluar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inventori</a>
+                </li>
+            </ul>
+            </span>
+        </span>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4 text-center">
+    <h1 class="fw-bold">Gudang Bahan Baku</h1>
+    <p class="text-muted mb-4">Dashboard Monitoring Persediaan</p>
+    <p class="fw-semibold mb-4">
+    Pengurus Logistik: <span class="fw-bold">Nanik Wijayanti</span>  
+    <span class="text-muted">| ID: 23051430006</span>
+</p>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <!-- FORM STOK MASUK -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white text-center">
+                    Form Stok Masuk
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nama Barang</label>
+                            <input type="text" class="form-control" placeholder="Contoh: Sensor Truck Mixer">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quantity</label>
+                            <input type="number" class="form-control" placeholder="Masukkan jumlah">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Supplier</label>
+                            <select class="form-select">
+                                <option selected>Pilih Supplier</option>
+                                <option>PT Surya Karya Setiabudi</option>
+                                <option>PT Budhi Karya Putra Utama</option>
+                                <option>Bayu Estetika CV</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">
+                            Simpan Data
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--TABEL STOK -->
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white text-center">
+                    Tabel Stok Saat Ini
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered text-center align-middle">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Barang</th>
+                                    <th>Supplier</th>
+                                    <th>Quantity</th>
+                                    <th>Masuk</th>
+                                    <th>Keluar</th>
+                                    <th>Sisa</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Sensor TM</td>
+                                    <td>PT Surya Karya Setia Budi</td>
+                                    <td>50</td>
+                                    <td>10</td>
+                                    <td>30</td>
+                                    <td>20</td>
+                                    <td><span class="badge bg-success">tersedia</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Pompa Air</td>
+                                    <td>PT Budhi Karya Putra Utama</td>
+                                    <td>95</td>
+                                    <td>10</td>
+                                    <td>65</td>
+                                    <td>50</td>
+                                    <td><span class="badge bg-warning text-dark">Menurun</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>V-Belt</td>
+                                    <td>Bayu Estetika CV</td>
+                                    <td>20</td>
+                                    <td>10</td>
+                                    <td>25</td>
+                                    <td>5</td>
+                                    <td><span class="badge bg-danger">Kritis</span></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Spion</td>
+                                    <td>Anrico CV</td>
+                                    <td>40</td>
+                                    <td>10</td>
+                                    <td>45</td>
+                                    <td>5</td>
+                                    <td><span class="badge bg-danger">Kritis</span></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ban dalam</td>
+                                    <td>PT Kontruksi Magna</td>
+                                    <td>30</td>
+                                    <td>10</td>
+                                    <td>10</td>
+                                    <td>20</td>
+                                    <td><span class="badge bg-success">tersedia</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
