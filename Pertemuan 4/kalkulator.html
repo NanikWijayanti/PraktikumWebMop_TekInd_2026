@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kalkulator Analisis Biaya Produksi</title>
+
+    <link rel="stylesheet" href="kalkulator.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Kalkulator Analisis Biaya Produksi</h1>
+        <p>Nanik Wijayanti</p>
+      </header>
+
+      <div class="container">
+        <!-- INPUT -->
+        <div class="card">
+          <h2>Input Data Produksi</h2>
+
+          <label>Biaya Bahan Baku</label>
+          <input type="number" id="biayaBahanBaku" />
+
+          <label>Biaya Tenaga Kerja</label>
+          <input type="number" id="biayaTenagaKerja" />
+
+          <label>Biaya Overhead</label>
+          <input type="number" id="biayaOverhead" />
+
+          <label>Jumlah Produksi</label>
+          <input type="number" id="jumlahProduksi" />
+
+          <button onclick="hitungBiaya()">Hitung Biaya</button>
+        </div>
+
+        <!-- HASIL -->
+        <div class="card">
+          <h2>Hasil Analisis</h2>
+
+          <div class="hasil-box">
+            <p>Total Biaya per Unit</p>
+            <h3 id="outputTotal">-</h3>
+          </div>
+
+          <div class="hasil-box">
+            <p>Status Efisiensi</p>
+            <h3 id="outputStatus">-</h3>
+          </div>
+        </div>
+
+        <!-- INFO -->
+        <div class="card info">
+          <h2>Informasi Perhitungan</h2>
+
+          <ul>
+            <li>Total Biaya = Bahan Baku + Tenaga Kerja + Overhead</li>
+            <li>Biaya per Unit = Total Biaya / Jumlah Produksi</li>
+            <li>Status efisiensi berdasarkan biaya per unit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="kalkulator.js"></script>
+  </body>
+</html>
