@@ -1,0 +1,205 @@
+/* --- RESET & DASAR --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    /* Background keseluruhan biru muda banget (soft sky blue) */
+    background-color: #e0f2fe; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* --- KOTAK UTAMA --- */
+.job-container {
+    background: #ffffff; /* Putih bersih supaya biru di sekitarnya makin 'pop' */
+    width: 420px;
+    padding: 35px;
+    border-radius: 30px;
+    /* Shadow biru lembut agar terlihat modern */
+    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.2); 
+    border: 2px solid #bae6fd;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Judul Biru Cerah */
+header h1 {
+    font-size: 1.8rem;
+    color: #0ea5e9; /* Biru cerah (Sky Blue) */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #38bdf8; /* Biru sedikit lebih muda untuk sub-judul */
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* --- PANEL STATUS --- */
+.status-panel {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-card {
+    background: #f0f9ff; /* Biru paling muda untuk kotak info */
+    padding: 15px;
+    flex: 1;
+    border-radius: 18px;
+    border: 1px solid #e0f2fe;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    background: #e0f2fe; /* Berubah sedikit saat disentuh kursor */
+}
+
+.info-card small {
+    display: block;
+    color: #7dd3fc;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.info-card strong {
+    color: #0369a1; /* Biru tua untuk nama operator */
+    font-size: 1rem;
+}
+
+/* Status Ready Berwarna Hijau Cerah */
+.badge {
+    color: #10b981; 
+    font-weight: 800;
+}
+
+/* --- TOMBOL AKSI --- */
+.btn-action {
+    width: 100%;
+    padding: 16px;
+    /* Tombol Biru Cerah Mantap */
+    background: #0ea5e9; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
+    margin-bottom: 25px;
+}
+
+.btn-action:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(14, 165, 233, 0.4);
+}
+
+/* --- MONITOR LOG --- */
+.monitor-screen {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 3px solid #f0f9ff;
+    overflow: hidden;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.screen-header {
+    background: #0ea5e9; /* Header monitor biru cerah */
+    padding: 10px 15px;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.log-content {
+    padding: 20px;
+    height: 190px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #0369a1; /* Teks log biru tua agar kebaca jelas */
+    font-weight: 500;
+}
+
+/* --- ANIMASI LOADING --- */
+
+.loading-bar {
+    width: 100%;
+    height: 14px;
+    background: #f0f9ff;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: none; 
+    border: 2px solid #e0f2fe;
+}
+
+.loading-progress {
+    width: 0%;
+    height: 100%;
+    /* Gradasi Biru yang cantik */
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    border-radius: 30px;
+}
+
+.scanning-text {
+    font-size: 12px;
+    color: #0ea5e9;
+    margin-bottom: 12px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    animation: blink 1s infinite; 
+    display: none;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+/* Styling Log Item Saat Muncul */
+.log-item {
+    border-left: 5px solid #0ea5e9;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+    background: #f8fbff;
+    border-radius: 0 15px 15px 0;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 11px;
+    color: #0ea5e9;
+    font-weight: bold;
+    opacity: 0.7;
+}

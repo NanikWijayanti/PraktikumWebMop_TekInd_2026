@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Antrian Job Shop - Nanik Wijayanti</title>
+    <link rel="stylesheet" href="simulai_antrian.css">
+</head>
+<body>
+
+    <div class="job-container">
+        <header>
+            <h1>Antrian Job Shop</h1>
+            <p>Sistem Simulasi Produksi v1.0</p>
+        </header>
+
+        <div class="status-panel">
+            <div class="info-card">
+                <small>Operator:</small>
+                <strong>Nanik Wijayanti</strong>
+            </div>
+            <div class="info-card">
+                <small>Status Mesin:</small>
+                <span id="statusMesin" class="badge">Ready</span>
+            </div>
+        </div>
+
+        <button class="btn-action" onclick="jalankanSimulasiJob()">
+            Mulai Proses Antrian
+        </button>
+
+        <div id="scanText" class="scanning-text">>>> system scanning for jobs...</div>
+        <div id="loader" class="loading-bar">
+            <div id="progress" class="loading-progress"></div>
+        </div>
+
+        <div class="monitor-screen">
+            <div class="screen-header">live monitoring log</div>
+            <div id="logAntrian" class="log-content">
+                <p>menunggu instruksi...</p>
+            </div>
+        </div>
+
+        <footer>
+            praktikum pemrograman web - 2026
+        </footer>
+    </div>
+
+    <script src="simulasi_antrian.js"></script>
+</body>
+</html>
