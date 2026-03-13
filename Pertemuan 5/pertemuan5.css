@@ -1,0 +1,129 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font lebih modern */
+}
+
+body {
+    background: #eef3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    width: 100%;
+    max-width: 420px; /* Lebih responsif */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    color: #1e5aa6;
+    font-size: 22px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+header p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Judul Section */
+h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eef3f8;
+    padding-bottom: 10px;
+}
+
+/* Form Group */
+.form-group {
+    text-align: left; /* Menjaga label tetap di kiri */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Memastikan label mengambil satu baris penuh */
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1.5px solid #d1d9e0;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2f80ed;
+    background-color: #f8fbff;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2f80ed;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1c5fb8;
+    transform: translateY(-1px); /* Efek angkat sedikit */
+}
+
+/* Hasil */
+h3 {
+    font-size: 15px;
+    margin-top: 25px;
+    color: #555;
+}
+
+#hasilDaya {
+    margin-top: 8px;
+    font-size: 20px;
+    color: #2f80ed;
+    padding: 10px;
+    background: #f0f7ff;
+    border-radius: 6px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #999;
+}

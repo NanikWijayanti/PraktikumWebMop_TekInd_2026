@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pertemuan5.css" />
+    <title>Kalkulator Energi Listrik Mesin</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Kalkulator Energi Listrik</h1>
+        <p>Dibuat oleh: <b>Nanik Wijayanti</b></p>
+      </header>
+
+      <main>
+        <section class="calculator-section">
+          <h2>Hitung Daya Mesin (Langkah 1)</h2>
+
+          <div class="form-group">
+            <label for="teganganInput">Tegangan Mesin (Volt)</label>
+            <input
+              type="number"
+              id="teganganInput"
+              placeholder="Contoh: 220"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="arusInput">Arus Mesin (Ampere)</label>
+            <input
+              type="number"
+              id="arusInput"
+              placeholder="Contoh: 10"
+              required
+            />
+          </div>
+
+          <button type="button" onclick="prosesHitung()">Hitung Daya</button>
+
+          <div class="result-box">
+            <h3>Hasil Perhitungan:</h3>
+            <p id="hasilDaya">Belum ada perhitungan</p>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="info-section">
+          <h2>Langkah 2, 3, & 4</h2>
+          <p>
+            Hasil untuk <b>Daftar Cacat</b>, <b>Data Mesin</b>, dan
+            <b>Stok Gudang</b> dapat dilihat pada <b>Console Browser (F12)</b>.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2026 - Nanik Wijayanti</p>
+      </footer>
+    </div>
+
+    <script src="pertemuan5.js"></script>
+  </body>
+</html>
