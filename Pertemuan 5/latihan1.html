@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kalkulator Multi-Fungsi - Nanik Wijayanti</title>
+    <link rel="stylesheet" href="latihan1.css" />
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <h2>Kalkulator Geometri</h2>
+        <p>Oleh: <b>Nanik Wijayanti</b></p>
+      </header>
+
+      <hr />
+
+      <label>Pilih Bangun:</label>
+      <select id="pilihBangun" onchange="aturInput()">
+        <option value="lingkaran">Lingkaran (r)</option>
+        <option value="kubus">Kubus (sisi)</option>
+        <option value="balok">Balok (p, l, t)</option>
+      </select>
+
+      <div id="inputArea">
+        <input
+          type="number"
+          id="val1"
+          placeholder="Masukkan Jari-jari / Sisi / Panjang"
+        />
+        <input
+          type="number"
+          id="val2"
+          placeholder="Lebar (untuk balok)"
+          style="display: none"
+        />
+        <input
+          type="number"
+          id="val3"
+          placeholder="Tinggi (untuk balok)"
+          style="display: none"
+        />
+      </div>
+
+      <button onclick="prosesHitungMulti()">Hitung Sekarang</button>
+
+      <div class="hasil-box">
+        <p id="teksHasil1">Hasil 1: <span>0</span></p>
+        <p id="teksHasil2">Hasil 2: <span>0</span></p>
+      </div>
+
+      <footer style="margin-top: 15px; font-size: 11px; color: #bbb">
+        Praktikum Pemrograman Web - 2026
+      </footer>
+    </div>
+
+    <script src="latihan1.js"></script>
+  </body>
+</html>

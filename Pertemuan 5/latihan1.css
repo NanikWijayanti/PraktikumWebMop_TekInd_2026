@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Gradasi Biru untuk Background */
+    background: linear-gradient(135deg, #1e3799, #4a69bd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Menggunakan min-height agar lebih aman di layar kecil */
+    margin: 0;
+}
+
+/* Kotak Utama (Card) */
+.card {
+    background-color: #ffffff;
+    width: 380px; /* Sedikit lebih lebar agar lebih lega */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top: 8px solid #0c2461; /* Garis biru tua di atas */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    margin: 0;
+    color: #0c2461;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 0.85rem;
+    color: #4a69bd;
+    margin-top: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #f1f2f6;
+    margin: 15px 0;
+}
+
+/* Gaya Label dan Input */
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #1e3799;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-align: left; /* Memastikan teks di kiri */
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #d1d8e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #4a69bd;
+    background-color: #f0f3ff;
+    box-shadow: 0 0 8px rgba(74, 105, 189, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1e3799;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(30, 55, 153, 0.4);
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0c2461;
+    transform: translateY(-2px);
+}
+
+/* Kotak Hasil Biru Muda */
+.hasil-box {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e1f5fe;
+    border-radius: 10px;
+    border-left: 5px solid #1e3799;
+}
+
+/* Perbaikan bagian ini agar teks dan angka sejajar rapi */
+.hasil-box p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #0c2461;
+    font-weight: 600;
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: space-between; /* Teks di kiri, angka di kanan */
+    align-items: center;
+}
+
+.hasil-box span {
+    color: #1e3799;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #95a5a6;
+    text-transform: uppercase;
+}
