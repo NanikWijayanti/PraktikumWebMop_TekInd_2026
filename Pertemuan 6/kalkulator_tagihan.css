@@ -1,0 +1,75 @@
+/* Background utama */
+body {
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card utama */
+.card-kalkulator {
+  background: white;
+  border-radius: 20px;
+  max-width: 450px;
+  transition: 0.3s;
+}
+
+/* Hover card */
+.card-kalkulator:hover {
+  transform: scale(1.02);
+}
+
+/* Judul */
+.judul {
+  color: #1e3a8a; /* biru tua */
+  font-weight: bold;
+}
+
+/* Author */
+.author {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Input */
+.input-custom {
+  border-radius: 10px;
+  border: 1px solid #93c5fd;
+}
+
+.input-custom:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px #93c5fd;
+}
+
+/* Box hasil */
+.hasil-box {
+  background: #eff6ff;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Status */
+.status-box {
+  background: #e0f2fe;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* Button */
+.btn-reset {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-reset:hover {
+  background: #2563eb;
+}
+
+/* Hover hasil */
+.hasil-box:hover {
+  background: #dbeafe;
+}
