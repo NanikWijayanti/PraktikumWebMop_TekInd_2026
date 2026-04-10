@@ -3,133 +3,182 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audit 5S - PT EduExo</title>
+    <title>Sistem Audit 5S - PT EduExo Indonesia</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Hapus atau perbaiki file style.css jika error MIME muncul -->
+
+    <!-- CSS Tambahan -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="bg-light">
-    <header class="brand-header text-center mb-4">
-      <h1 class="fw-bold">PT EduExo Indonesia</h1>
-      <p class="mb-3 fs-5">Form Checklist Audit 5S Area Kerja</p>
-      <span
-        class="badge bg-light text-dark px-3 py-2 fs-6 shadow-sm border border-secondary"
-        >Penanggung Jawab: Nanik Wijayanti
+  <body class="bg-light d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="text-center py-4 mb-4 border-bottom bg-white shadow-sm">
+      <h1 class="fw-bold mb-1">PT EduExo Indonesia</h1>
+      <p class="mb-2">Formulir Checklist Audit 5S Area Kerja</p>
+      <span class="badge bg-secondary">
+        Penanggung Jawab: Nanik Wijayanti
       </span>
     </header>
 
-    <div class="container mb-5">
+    <!-- Konten Utama -->
+    <main class="container mb-5">
       <div class="row">
         <!-- Form Input -->
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm border-top border-primary border-4">
-            <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
-              <h5 class="fw-bold text-dark">Form Inspeksi Harian</h5>
+            <div class="card-header bg-white">
+              <h5 class="fw-bold mb-0">Form Inspeksi Harian</h5>
             </div>
+
             <div class="card-body">
               <form id="formAudit">
+                <!-- Tanggal -->
                 <div class="mb-3">
-                  <label
-                    for="tanggalAudit"
-                    class="form-label text-muted small fw-bold"
-                    >TANGGAL INSPEKSI</label
-                  >
+                  <label for="tanggalAudit" class="form-label fw-semibold">
+                    Tanggal Inspeksi
+                  </label>
                   <input
                     type="date"
                     id="tanggalAudit"
-                    class="form-control bg-light"
+                    class="form-control"
                     required
                   />
                 </div>
 
+                <!-- Shift -->
                 <div class="mb-3">
-                  <label
-                    for="shiftAudit"
-                    class="form-label text-muted small fw-bold"
-                    >SHIFT</label
-                  >
-                  <select
-                    id="shiftAudit"
-                    class="form-control bg-light"
-                    required
-                  >
-                    <option value="">Pilih Shift...</option>
+                  <label for="shiftAudit" class="form-label fw-semibold">
+                    Shift Kerja
+                  </label>
+                  <select id="shiftAudit" class="form-select" required>
+                    <option value="">Pilih shift</option>
                     <option value="Pagi">Pagi</option>
                     <option value="Siang">Siang</option>
                     <option value="Malam">Malam</option>
                   </select>
                 </div>
 
+                <!-- Operator -->
                 <div class="mb-4">
-                  <label
-                    for="namaAuditor"
-                    class="form-label text-muted small fw-bold"
-                    >NAMA AUDITOR</label
-                  >
-                  <input
-                    type="text"
-                    id="namaAuditor"
-                    class="form-control bg-light"
-                    placeholder="Nama Anda..."
-                    required
-                  />
+                  <label for="operatorAudit" class="form-label fw-semibold">
+                    Operator
+                  </label>
+                  <select id="operatorAudit" class="form-select" required>
+                    <option value="">Pilih operator</option>
+                    <option value="1|Ahmad Santoso">
+                      ID 001 - Ahmad Santoso
+                    </option>
+                    <option value="2|Budi Hartono">
+                      ID 002 - Budi Hartono
+                    </option>
+                    <option value="3|Citra Dewi">ID 003 - Citra Dewi</option>
+                    <option value="4|Dewi Lestari">
+                      ID 004 - Dewi Lestari
+                    </option>
+                    <option value="5|Eko Prasetyo">
+                      ID 005 - Eko Prasetyo
+                    </option>
+                    <option value="6|Fajar Nugroho">
+                      ID 006 - Fajar Nugroho
+                    </option>
+                    <option value="7|Gita Ramadhani">
+                      ID 007 - Gita Ramadhani
+                    </option>
+                    <option value="8|Hadi Wibowo">ID 008 - Hadi Wibowo</option>
+                    <option value="9|Indah Sari">ID 009 - Indah Sari</option>
+                    <option value="10|Joko Widodo">ID 010 - Joko Widodo</option>
+                    <option value="11|Kartika Putri">
+                      ID 011 - Kartika Putri
+                    </option>
+                    <option value="12|Larasati">ID 012 - Larasati</option>
+                    <option value="13|Muhammad Ali">
+                      ID 013 - Muhammad Ali
+                    </option>
+                    <option value="14|Nadia Fitri">ID 014 - Nadia Fitri</option>
+                    <option value="15|Oscar Rahman">
+                      ID 015 - Oscar Rahman
+                    </option>
+                    <option value="16|Putra Wijaya">
+                      ID 016 - Putra Wijaya
+                    </option>
+                    <option value="17|Qori Andini">ID 017 - Qori Andini</option>
+                    <option value="18|Rina Susanti">
+                      ID 018 - Rina Susanti
+                    </option>
+                    <option value="19|Surya Pratama">
+                      ID 019 - Surya Pratama
+                    </option>
+                    <option value="20|Tia Maharani">
+                      ID 020 - Tia Maharani
+                    </option>
+                  </select>
                 </div>
 
-                <div class="p-3 bg-light border rounded mb-4">
-                  <label
-                    class="form-label text-primary small fw-bold mb-3 border-bottom pb-2 w-100"
-                  >
-                    ITEM PENILAIAN 5S
+                <!-- Checklist 5S -->
+                <div class="border rounded p-3 mb-4 bg-light">
+                  <label class="fw-semibold text-primary mb-2 d-block">
+                    Item Penilaian 5S
                   </label>
 
-                  <div class="form-check mb-2">
+                  <div class="form-check">
                     <input
                       class="form-check-input ceklis-5s"
                       type="checkbox"
                       value="Seiri"
                       id="check1"
                     />
-                    <label class="form-check-label fw-bold" for="check1"
-                      >1. Seiri (Ringkas)</label
+                    <label class="form-check-label" for="check1"
+                      >Seiri (Ringkas)</label
                     >
                   </div>
-                  <div class="form-check mb-2">
+
+                  <div class="form-check">
                     <input
                       class="form-check-input ceklis-5s"
                       type="checkbox"
                       value="Seiton"
                       id="check2"
                     />
-                    <label class="form-check-label fw-bold" for="check2"
-                      >2. Seiton (Rapi)</label
+                    <label class="form-check-label" for="check2"
+                      >Seiton (Rapi)</label
                     >
                   </div>
-                  <div class="form-check mb-2">
+
+                  <div class="form-check">
                     <input
                       class="form-check-input ceklis-5s"
                       type="checkbox"
                       value="Seiso"
                       id="check3"
                     />
-                    <label class="form-check-label fw-bold" for="check3"
-                      >3. Seiso (Resik)</label
+                    <label class="form-check-label" for="check3"
+                      >Seiso (Resik)</label
                     >
                   </div>
-                  <div class="form-check mb-2">
+
+                  <div class="form-check">
                     <input
                       class="form-check-input ceklis-5s"
                       type="checkbox"
                       value="Seiketsu"
                       id="check4"
                     />
-                    <label class="form-check-label fw-bold" for="check4"
-                      >4. Seiketsu (Rawat)</label
+                    <label class="form-check-label" for="check4"
+                      >Seiketsu (Rawat)</label
                     >
                   </div>
+
                   <div class="form-check">
                     <input
                       class="form-check-input ceklis-5s"
@@ -137,16 +186,14 @@
                       value="Shitsuke"
                       id="check5"
                     />
-                    <label class="form-check-label fw-bold" for="check5"
-                      >5. Shitsuke (Rajin)</label
+                    <label class="form-check-label" for="check5"
+                      >Shitsuke (Rajin)</label
                     >
                   </div>
                 </div>
 
-                <button
-                  type="submit"
-                  class="btn btn-primary w-100 fw-bold rounded-pill"
-                >
+                <!-- Tombol -->
+                <button type="submit" class="btn btn-primary w-100 fw-semibold">
                   Simpan Hasil Audit
                 </button>
               </form>
@@ -154,49 +201,45 @@
           </div>
         </div>
 
-        <!-- Tabel Data Riwayat -->
+        <!-- Tabel -->
         <div class="col-md-8">
-          <div class="card shadow-sm border-0">
+          <div class="card shadow-sm">
             <div
-              class="card-header bg-dark text-white d-flex justify-content-between align-items-center"
+              class="card-header bg-dark text-white d-flex justify-content-between"
             >
-              <h5 class="mb-0">Data Riwayat Audit</h5>
+              <h5 class="mb-0">Riwayat Audit</h5>
               <input
                 type="text"
                 id="inputCari"
                 class="form-control form-control-sm w-50"
-                placeholder="Cari nama auditor..."
+                placeholder="Cari operator"
               />
             </div>
 
-            <div class="card-body p-0 border">
-              <div class="table-responsive">
-                <table class="table table-striped align-middle m-0">
-                  <thead class="table-secondary">
-                    <tr>
-                      <th class="ps-3">Tanggal</th>
-                      <th>Shift</th>
-                      <th>Auditor</th>
-                      <th>Skor</th>
-                      <th>Detail 5S (Array Data)</th>
-                      <th class="text-center">Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody id="tabelBody5S"></tbody>
-                </table>
-              </div>
+            <div class="table-responsive">
+              <table class="table table-striped mb-0">
+                <thead class="table-secondary">
+                  <tr>
+                    <th>Tanggal</th>
+                    <th>Shift</th>
+                    <th>Operator</th>
+                    <th>Skor</th>
+                    <th>Detail</th>
+                    <th class="text-center">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="tabelBody5S"></tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <footer class="text-center text-muted mt-auto py-4 border-top">
-      <small
-        >&copy; PT EduExo Indonesia | Penanggung Jawab: Nanik Wijayanti
-      </small>
+    <!-- Footer -->
+    <footer class="text-center py-3 border-top bg-white mt-auto">
+      <small>© PT EduExo Indonesia</small>
     </footer>
-
-    <script src="audit.js" defer></script>
+    <script src="audit.js"></script>
   </body>
 </html>
