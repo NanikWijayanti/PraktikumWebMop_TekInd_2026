@@ -1,0 +1,21 @@
+/* proyek_mini.css */
+body { 
+    background-color: #f4f7f6; 
+    color: #333; 
+}
+
+.card-header-corporate { 
+    background-color: #0c2340; 
+    color: white; 
+} 
+
+.btn-corporate { 
+    background-color: #0056b3; 
+    color: white; 
+    font-weight: 500; 
+}
+
+.btn-corporate:hover { 
+    background-color: #004494; 
+    color: white; 
+}
