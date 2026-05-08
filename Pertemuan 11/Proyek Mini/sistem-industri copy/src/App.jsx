@@ -43,7 +43,7 @@ function App() {
         <Route path="/laporan-kualitas" element={<LaporanKualitas />} /> //
         Menambahkan route laporan kualitas 1: Menambahkan Route Detail Inventori
         {/* Route untuk semua path lainnya (404) */}
-        <Route path="" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
